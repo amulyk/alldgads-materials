@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`«User» constructor should match its snapshot 1`] = `
+User {
+  "created": 2020-01-30T13:59:53.450Z,
+  "id": "1d2c657e-6e5c-4aa3-8f1e-dbd7472551e9",
+  "name": "Jack",
+}
+`;
