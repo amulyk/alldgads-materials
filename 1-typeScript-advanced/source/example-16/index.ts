@@ -20,11 +20,11 @@ function todoReducer(
                 todos: []
             };
         }
-        case "Remove One": {
-            return {
-                todos: state.todos.slice().splice(action.payload, 1)
-            };
-        }
+        // case "Remove One": {
+        //     return {
+        //         todos: state.todos.slice().splice(action.payload, 1)
+        //     };
+        // }
         default: {
             const x: never = action;
         }

@@ -11,7 +11,7 @@ type ReadonlyPet = {
 const pet:IPet = {name: 'Buttons', age: 5};
 
 // Immutable State
-const readonlyPet: ReadonlyPet = {name: 'Buttons', age: 5};
+const readonlyPet: ReadonlyPet = {name: 'Buttons', age: 1};
 
 // State mutations
 pet.age = 6;

@@ -10,9 +10,9 @@ let service: IDataService = {
 
 const response = service.getData();
 
-// if (Array.isArray(response)){
+if (Array.isArray(response)){
     response.indexOf(1);
-// }
+}
 
 if (typeof response === 'string') {
     console.log(response.toUpperCase());

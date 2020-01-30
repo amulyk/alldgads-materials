@@ -9,7 +9,7 @@ interface User {
 
 function redirect(usr: Admin | User) {
     if(isAdmin(usr)) {
-        console.log(usr.role);
+        console.log(usr.id);
     } else {
         console.log(usr.email);
     }

@@ -23,5 +23,6 @@ if (typeof response === 'string') {
 }
 
 function isComment(type: any): type is IComment {
-    return (<IComment>type).message !== undefined && (<IComment>type).date !== undefined;
+    return (<IComment>type).message !== undefined
+        && (<IComment>type).date !== undefined;
 }
