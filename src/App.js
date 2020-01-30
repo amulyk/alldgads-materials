@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export const App = () => {
+const MyComponent = () => {
   const { t, i18n } = useTranslation();
 
   const changeLanguageToRussian = () => {
@@ -23,5 +23,19 @@ export const App = () => {
       <button onClick={changeLanguageToUkrainian}>uk</button>
       <button onClick={changeLanguageToEnglish}>en</button>
     </>
+  );
+};
+
+const Loader = () => {
+  return (
+    <p>Loading...</p>
+  );
+};
+
+export const App = () => {
+  return (
+    <Suspense fallback={ Loader }>
+      <MyComponent />
+    </Suspense>
   );
 };
